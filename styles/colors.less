@@ -1,0 +1,27 @@
+// Config
+@syntax-hue:          220;
+@syntax-saturation:   13%;
+@syntax-brightness:   18%;
+
+// Monochrome
+@mono-1: hsl(@syntax-hue, 14%, 71%); // Default, variable
+@mono-2: hsl(@syntax-hue,  9%, 55%); // Operators
+@mono-3: hsl(@syntax-hue, 10%, 42%); // Structural, punctuation
+@mono-4: hsl(@syntax-hue, 10%, 32%); // Comments
+
+// Colors
+@hue-1:   hsl(187, 47%, 55%); // Types
+@hue-2:   hsl(207, 82%, 66%); // Classes
+@hue-3:   hsl(222, 48%, 64%); // Keywords
+@hue-4:   hsl(143, 29%, 61%); // Strings
+@hue-5:   hsl(162, 29%, 54%); // Variable decl.
+@hue-5-2: hsl(0, 36%, 59%);
+@hue-6:   hsl(211, 22%, 78%); // Variable value, strings
+@hue-6-2: hsl(190, 44%, 62%);
+
+// Base colors
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% ); // Methods, functions
