@@ -1,7 +1,7 @@
 # nv-dark-syntax
 A dark, minimalist syntax theme, that is consistent across multiple languages.
 
-![nv-dark-syntax](https://github.com/NicklasVraa/nv-dark-syntax/blob/master/example.png)
+![nv-dark-syntax](https://github.com/NicklasVraa/nv-dark-syntax/blob/master/example.png?raw=true)
 
 ## Author
 Nicklas Vraa. Inspired by One Dark
