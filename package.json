@@ -1,14 +1,14 @@
 {
-  "name": "nv-syntax",
+  "name": "nv-dark-syntax",
   "theme": "syntax",
-  "version": "1.1.0",
-  "description": "A muted, calmer version of One Dark",
+  "version": "1.0.0",
+  "description": "Dark, minimalist and consistent",
   "keywords": [
     "dark",
-    "blue",
-    "syntax"
+    "minimalist",
+    "consistent"
   ],
-  "repository": "https://github.com/NicklasVraa/nvsyntax.git",
+  "repository": "https://github.com/NicklasVraa/nv-dark-syntax.git",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
