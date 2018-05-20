@@ -12,3 +12,4 @@ Nicklas Vraa. Inspired by One Dark
 - html
 - css
 - less
+- javascript
