@@ -20,7 +20,7 @@
 @syntax-gutter-text-color: @syntax-gutter;
 @syntax-gutter-text-color-selected: @syntax-fg;
 @syntax-gutter-background-color: @syntax-bg;
-@syntax-gutter-background-color-selected: lighten(@syntax-bg, 8%);
+@syntax-gutter-background-color-selected: @syntax-bg;
 
 // Git colors
 @syntax-color-renamed: @syntax-accent;
@@ -29,27 +29,18 @@
 @syntax-color-removed: @hue-6;
 
 // Language entity colors
-    // group 1
-    @syntax-color-variable: @hue-5;
-    @syntax-color-constant: @hue-7;
-    @syntax-color-property: @syntax-fg;
-    @syntax-color-value: @syntax-fg;
-
-    // group 2
-    @syntax-color-function: @hue-2;
-    @syntax-color-method: @hue-2;
-
-    // group 3
-    @syntax-color-class: @hue-8;
-
-    // group 4
-    @syntax-color-import: @hue-3;
-    @syntax-color-keyword: @hue-3;
-    @syntax-color-tag: @hue-5;
-
-    // group 5
-    @syntax-color-attribute: @hue-7;
-    @syntax-color-snippet: @hue-5;
+@syntax-color-variable: @hue-5;
+@syntax-color-constant: @hue-7;
+@syntax-color-property: @syntax-fg;
+@syntax-color-value: @syntax-fg;
+@syntax-color-function: @hue-2;
+@syntax-color-method: @hue-2;
+@syntax-color-class: @hue-8;
+@syntax-color-import: @hue-3;
+@syntax-color-keyword: @hue-3;
+@syntax-color-tag: @hue-5;
+@syntax-color-attribute: @hue-7;
+@syntax-color-snippet: @hue-5;
 
 // Custom Syntax Variables, dont touch
 @syntax-cursor-line: hsla(@syntax-hue, 100%, 80%, .04);

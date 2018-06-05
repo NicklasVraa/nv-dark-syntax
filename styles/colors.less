@@ -2,23 +2,23 @@
 @syntax-hue: 220;
 
 // Monochrome
-@mono-1: hsl(@syntax-hue, 14%, 75%);
-@mono-2: hsl(@syntax-hue, 9%, 60%);
-@mono-3: hsl(@syntax-hue, 10%, 50%);
-@mono-4: hsl(@syntax-hue, 10%, 42%);
+@mono-1: hsl(@syntax-hue, 14%, 78%);
+@mono-2: hsl(@syntax-hue, 9%, 64%);
+@mono-3: hsl(@syntax-hue, 10%, 52%);
+@mono-4: hsl(@syntax-hue, 10%, 44%);
 
 // Colors
-@hue-1: hsl(187, 47%, 60%);
-@hue-2: hsl(207, 82%, 66%);
-@hue-3: hsl(222, 50%, 65%);
-@hue-5: hsl(162, 40%, 60%);
-@hue-6: hsl(0, 40%, 54%);
+@hue-1: hsl(187, 47%, 62%);
+@hue-2: hsl(207, 82%, 68%);
+@hue-3: hsl(222, 52%, 67%);
+@hue-5: hsl(162, 40%, 62%);
+@hue-6: hsl(0, 40%, 56%);
 @hue-7: hsl(211, 22%, 78%);
 @hue-8: hsl(190, 60%, 68%);
 
 // Base colors
 @syntax-fg: @mono-1;
 @syntax-bg: hsl(@syntax-hue, 14%, 16%);
-@syntax-gutter: darken(@syntax-fg, 28%);
+@syntax-gutter: lighten(@syntax-bg, 20%);
 @syntax-guide: fade(@syntax-fg, 15%);
-@syntax-accent: hsl(@syntax-hue, 100%, 60%);
+@syntax-accent: hsl(@syntax-hue, 90%, 60%);
