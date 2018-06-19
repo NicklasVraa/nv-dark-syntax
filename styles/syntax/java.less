@@ -1,40 +1,42 @@
 .syntax--source.syntax--java {
-  .syntax--storage {
-    &.syntax--modifier.syntax--import {
-      color: @hue-8;
+    .syntax--storage {
+        &.syntax--modifier.syntax--import {
+            color: @hue-8;
+        }
+
+        &.syntax--type {
+            color: @hue-8;
+        }
     }
 
-    &.syntax--type {
-      color: @hue-8;
+    .syntax--keyword.syntax--operator.syntax--instanceof {
+        color: @hue-3;
     }
-  }
-  .syntax--keyword.syntax--operator.syntax--instanceof {
-    color: @hue-3;
-  }
 }
 
 .syntax--source.syntax--java-properties {
-  .syntax--meta.syntax--key-pair {
-    color: @hue-5;
+    .syntax--meta.syntax--key-pair {
+        color: @hue-5;
 
-    & > .syntax--punctuation {
-      color: @mono-1;
+        & > .syntax--punctuation {
+            color: @mono-1;
+        }
     }
-  }
 }
 
-.syntax--keyword.syntax--other.syntax--documentation.syntax--javadoc.syntax--java{
-  color: @mono-3;
-  font-style: normal;
-}
-.syntax--storage.syntax--type.syntax--annotation.syntax--java{
-  color: @mono-3;
+.syntax--keyword.syntax--other.syntax--documentation.syntax--javadoc.syntax--java {
+    color: @mono-3;
+    font-style: normal;
 }
 
-.syntax--storage.syntax--type.syntax--class.syntax--debug{
+.syntax--storage.syntax--type.syntax--annotation.syntax--java {
     color: @mono-3;
 }
 
-.syntax--storage.syntax--type.syntax--class.syntax--todo{
+.syntax--storage.syntax--type.syntax--class.syntax--debug {
+    color: @mono-3;
+}
+
+.syntax--storage.syntax--type.syntax--class.syntax--todo {
     color: @mono-3;
 }
