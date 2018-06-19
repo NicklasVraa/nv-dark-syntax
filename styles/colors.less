@@ -1,24 +1,71 @@
-// Main color
+/* Main color */
 @syntax-hue: 224;
 
-// Monochrome
+/* Monochrome */
 @mono-1: hsl(@syntax-hue, 14%, 78%);
 @mono-2: hsl(@syntax-hue, 9%, 64%);
-@mono-3: hsl(@syntax-hue, 10%, 55%);
+@mono-3: hsl(@syntax-hue, 10%, 52%);
 @mono-4: hsl(@syntax-hue, 10%, 40%);
 
-// Colors
-@hue-1: hsl(187, 45%, 68%);
+/* Colors */
+@hue-1: hsl(187, 48%, 65%);
 @hue-2: hsl(207, 90%, 72%);
-@hue-3: hsl(222, 64%, 78%);
+@hue-3: hsl(222, 70%, 78%);
 @hue-5: hsl(162, 44%, 64%);
 @hue-6: hsl(196, 33%, 46%);
-@hue-7: hsl(211, 22%, 82%);
+@hue-7: hsl(211, 22%, 80%);
 @hue-8: hsl(190, 60%, 68%);
+@hue-9: hsl(0, 40%, 56%);
 
-// Base colors
+/* Base colors scheme */
 @syntax-fg: @mono-1;
 @syntax-bg: hsl(@syntax-hue, 14%, 16%);
 @syntax-gutter: lighten(@syntax-bg, 20%);
 @syntax-guide: fade(@syntax-fg, 15%);
 @syntax-accent: hsl(@syntax-hue, 90%, 60%);
+@syntax-text-color: @syntax-fg;
+@syntax-cursor-color: @syntax-accent;
+@syntax-selection-color: lighten(@syntax-background-color, 10%);
+@syntax-selection-flash-color: @syntax-accent;
+@syntax-background-color: @syntax-bg;
+
+/* Guide colors */
+@syntax-wrap-guide-color: @syntax-guide;
+@syntax-indent-guide-color: @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
+
+/* Find-and-replace markers */
+@syntax-result-marker-color: fade(@syntax-accent, 24%);
+@syntax-result-marker-color-selected: @syntax-accent;
+
+/* Gutter colors */
+@syntax-gutter-text-color: @syntax-gutter;
+@syntax-gutter-text-color-selected: @syntax-fg;
+@syntax-gutter-background-color: @syntax-bg;
+@syntax-gutter-background-color-selected: @syntax-bg;
+
+/* Git colors */
+@syntax-color-renamed: @syntax-accent;
+@syntax-color-added: @hue-5;
+@syntax-color-modified: @hue-3;
+@syntax-color-removed: @hue-9;
+
+/* Language entity colors */
+@syntax-color-variable: @hue-5;
+@syntax-color-constant: @hue-7;
+@syntax-color-property: @syntax-fg;
+@syntax-color-value: @syntax-fg;
+@syntax-color-function: @hue-2;
+@syntax-color-method: @hue-2;
+@syntax-color-class: @hue-8;
+@syntax-color-import: @hue-3;
+@syntax-color-keyword: @hue-3;
+@syntax-color-tag: @hue-5;
+@syntax-color-attribute: @hue-7;
+@syntax-color-snippet: @hue-5;
+
+/* Custom Syntax Variables */
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg: white;
+@syntax-illegal-bg: @syntax-color-removed;
