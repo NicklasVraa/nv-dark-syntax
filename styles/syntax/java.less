@@ -1,11 +1,11 @@
 .syntax--source.syntax--java {
     .syntax--storage {
         &.syntax--modifier.syntax--import {
-            color: @hue-8;
+            color: @hue-1;
         }
 
         &.syntax--type {
-            color: @hue-8;
+            color: @hue-1;
         }
     }
     .syntax--keyword.syntax--operator.syntax--instanceof {
@@ -25,7 +25,6 @@
 
 .syntax--keyword.syntax--other.syntax--documentation.syntax--javadoc.syntax--java{
     color: @mono-3;
-    font-style: normal;
 }
 
 .syntax--storage.syntax--type.syntax--annotation.syntax--java{
@@ -38,4 +37,11 @@
 
 .syntax--storage.syntax--type.syntax--class.syntax--todo{
     color: @mono-3;
+}
+
+.syntax--comment.syntax--block.syntax--javadoc.syntax--java{
+    .syntax--variable.syntax--parameter.syntax--java{
+        color: @mono-5;
+        font-style: italic;
+    }
 }
