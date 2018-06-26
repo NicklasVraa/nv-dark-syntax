@@ -31,16 +31,23 @@
     color: @mono-3;
 }
 
-.syntax--storage.syntax--type.syntax--class.syntax--debug{
-    color: @mono-3;
-}
-
-.syntax--storage.syntax--type.syntax--class.syntax--todo{
-    color: @mono-3;
+.syntax--storage.syntax--type.syntax--class{
+    &.syntax--debug,
+    &.syntax--todo,
+    &.syntax--fixme,
+    &.syntax--idea,
+    &.syntax--changed,
+    &.syntax--xxx,
+    &.syntax--hack,
+    &.syntax--note,
+    &.syntax--review,
+    &.syntax--question,
+    &.syntax--temp{
+        color: @mono-3;
+    }
 }
 
 .syntax--comment.syntax--block.syntax--javadoc.syntax--java{
-
     .syntax--variable.syntax--parameter.syntax--java{
         color: @mono-5;
     }
