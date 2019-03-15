@@ -1,47 +1,58 @@
 .syntax--source.syntax--elixir {
-    .syntax--source.syntax--embedded.syntax--source {
-        color: @mono-1;
+  .syntax--source.syntax--embedded.syntax--source {
+    color: @mono-1;
+  }
+
+  .syntax--constant.syntax--definition,
+  .syntax--constant.syntax--language,
+  .syntax--constant.syntax--numeric {
+    color: @hue-2;
+  }
+
+  .syntax--variable.syntax--anonymous,
+  .syntax--variable.syntax--definition {
+    color: @hue-3;
+  }
+
+  .syntax--parameter.syntax--variable.syntax--function {
+    color: @hue-7;
+    font-style: italic;
+  }
+
+  .syntax--quoted {
+    color: @hue-5;
+  }
+
+  ,
+  .syntax--embedded.syntax--section,
+  .syntax--embedded.syntax--source.syntax--empty,
+  .syntax--keyword.syntax--special-method {
+    color: @hue-5;
+  }
+
+  .syntax--readwrite.syntax--module {
+    .syntax--punctuation {
+      color: @hue-5;
     }
-    .syntax--constant.syntax--language,
-    .syntax--constant.syntax--numeric,
-    .syntax--constant.syntax--definition  {
-        color: @hue-2;
-    }
-    .syntax--variable.syntax--definition,
-    .syntax--variable.syntax--anonymous{
-        color: @hue-3;
-    }
-    .syntax--parameter.syntax--variable.syntax--function {
-        color: @hue-7;
-        font-style: italic;
-    }
-    .syntax--quoted{
-        color: @hue-5;
-    }
-    .syntax--keyword.syntax--special-method,
-    .syntax--embedded.syntax--section,
-    .syntax--embedded.syntax--source.syntax--empty,  {
-        color: @hue-5;
-    }
-    .syntax--readwrite.syntax--module {
-        .syntax--punctuation {
-            color: @hue-5;
-        }
-    }
-    .syntax--regexp.syntax--section,
-    .syntax--regexp.syntax--string {
-        color: @hue-6;
-    }
-    .syntax--separator,
-    .syntax--keyword.syntax--operator  {
-        color: @hue-7;
-    }
-    .syntax--variable.syntax--constant {
-        color: @hue-1;
-    }
-    .syntax--array,
-    .syntax--scope,
-    .syntax--section {
-        color: @mono-2;
-    }
+  }
+
+  .syntax--regexp.syntax--section,
+  .syntax--regexp.syntax--string {
+    color: @hue-6;
+  }
+
+  .syntax--keyword.syntax--operator,
+  .syntax--separator {
+    color: @hue-7;
+  }
+
+  .syntax--variable.syntax--constant {
+    color: @hue-1;
+  }
+
+  .syntax--array,
+  .syntax--scope,
+  .syntax--section {
+    color: @mono-2;
+  }
 }

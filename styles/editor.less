@@ -1,93 +1,93 @@
 // Editor styles (background, gutter, guides)
+
 atom-text-editor {
-    background-color: @syntax-background-color;
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .invisible {
     color: @syntax-text-color;
+  }
 
-    .invisible {
-        color: @syntax-text-color;
-    }
+  .cursor {
+    border-left: 2px solid @syntax-cursor-color;
+  }
 
-    .cursor {
-        border-left: 2px solid @syntax-cursor-color;
-    }
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
 
-    .selection .region {
-        background-color: @syntax-selection-color;
-    }
+  .bracket-matcher .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+  }
 
-    .bracket-matcher .region {
-        border-bottom: 1px solid @syntax-cursor-color;
-        box-sizing: border-box;
-    }
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
 
-    .invisible-character {
-        color: @syntax-invisible-character-color;
-    }
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
 
-    .indent-guide {
-        color: @syntax-indent-guide-color;
-    }
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+  // find + replace
+  .current-result .region.region.region,
+  .find-result .region.region.region {
+    border-radius: 2px;
+    background-color: @syntax-result-marker-color;
+    transition: border-color 0.4s;
+  }
 
-    .wrap-guide {
-        background-color: @syntax-wrap-guide-color;
-    }
-    
-    // find + replace
-    .current-result .region.region.region,
-    .find-result .region.region.region {
-        border-radius: 2px;
-        background-color: @syntax-result-marker-color;
-        transition: border-color 0.4s;
-    }
+  .find-result .region.region.region {
+    border: 2px solid transparent;
+  }
 
-    .find-result .region.region.region {
-        border: 2px solid transparent;
-    }
+  .current-result .region.region.region {
+    border: 2px solid @syntax-result-marker-color-selected;
+    transition-duration: 0.1s;
+  }
 
-    .current-result .region.region.region {
-        border: 2px solid @syntax-result-marker-color-selected;
-        transition-duration: 0.1s;
-    }
+  .gutter {
+    .line-number {
+      color: @syntax-gutter-text-color;
+      -webkit-font-smoothing: antialiased;
 
-    .gutter {
-        .line-number {
-            color: @syntax-gutter-text-color;
-            -webkit-font-smoothing: antialiased;
-
-            &.cursor-line {
-                color: @syntax-gutter-text-color-selected;
-                background-color: @syntax-gutter-background-color-selected;
-            }
-
-            &.cursor-line-no-selection {
-                background-color: transparent;
-            }
-
-            .icon-right {
-                color: @syntax-text-color;
-            }
-        }
-
-        &:not(.git-diff-icon) .line-number.git-line-removed {
-            &.git-line-removed::before {
-                bottom: -3px;
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 25px;
-                border-bottom: 1px dotted fade(@syntax-color-removed, 50%);
-                pointer-events: none;
-            }
-        }
-    }
-
-    .fold-marker:after,
-    .gutter .line-number.folded,
-    .gutter .line-number:after {
+      &.cursor-line {
         color: @syntax-gutter-text-color-selected;
+        background-color: @syntax-gutter-background-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        background-color: transparent;
+      }
+
+      .icon-right {
+        color: @syntax-text-color;
+      }
     }
+
+    &:not(.git-diff-icon) .line-number.git-line-removed {
+      &.git-line-removed::before {
+        bottom: -3px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        border-bottom: 1px dotted fade(@syntax-color-removed, 50%);
+        pointer-events: none;
+      }
+    }
+  }
+
+  .fold-marker:after,
+  .gutter .line-number.folded,
+  .gutter .line-number:after {
+    color: @syntax-gutter-text-color-selected;
+  }
 }

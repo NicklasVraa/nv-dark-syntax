@@ -1,54 +1,55 @@
 .syntax--source.syntax--java {
-    .syntax--storage {
-        &.syntax--modifier.syntax--import {
-            color: @hue-1;
-        }
+  .syntax--storage {
+    &.syntax--modifier.syntax--import {
+      color: @hue-1;
+    }
 
-        &.syntax--type {
-            color: @hue-1;
-        }
+    &.syntax--type {
+      color: @hue-1;
     }
-    .syntax--keyword.syntax--operator.syntax--instanceof {
-        color: @hue-3;
-    }
+  }
+
+  .syntax--keyword.syntax--operator.syntax--instanceof {
+    color: @hue-3;
+  }
 }
 
 .syntax--source.syntax--java-properties {
-    .syntax--meta.syntax--key-pair {
-        color: @hue-5;
+  .syntax--meta.syntax--key-pair {
+    color: @hue-5;
 
-        & > .syntax--punctuation {
-            color: @mono-1;
-        }
+    & > .syntax--punctuation {
+      color: @mono-1;
     }
+  }
 }
 
-.syntax--keyword.syntax--other.syntax--documentation.syntax--javadoc.syntax--java{
-    color: @mono-5;
+.syntax--keyword.syntax--other.syntax--documentation.syntax--javadoc.syntax--java {
+  color: @mono-5;
 }
 
-.syntax--storage.syntax--type.syntax--annotation.syntax--java{
+.syntax--storage.syntax--type.syntax--annotation.syntax--java {
+  color: @mono-3;
+}
+
+.syntax--storage.syntax--type.syntax--class {
+  &.syntax--changed,
+  &.syntax--debug,
+  &.syntax--fixme,
+  &.syntax--hack,
+  &.syntax--idea,
+  &.syntax--note,
+  &.syntax--question,
+  &.syntax--review,
+  &.syntax--temp,
+  &.syntax--todo,
+  &.syntax--xxx {
     color: @mono-3;
+  }
 }
 
-.syntax--storage.syntax--type.syntax--class{
-    &.syntax--debug,
-    &.syntax--todo,
-    &.syntax--fixme,
-    &.syntax--idea,
-    &.syntax--changed,
-    &.syntax--xxx,
-    &.syntax--hack,
-    &.syntax--note,
-    &.syntax--review,
-    &.syntax--question,
-    &.syntax--temp{
-        color: @mono-3;
-    }
-}
-
-.syntax--comment.syntax--block.syntax--javadoc.syntax--java{
-    .syntax--variable.syntax--parameter.syntax--java{
-        color: @mono-5;
-    }
+.syntax--comment.syntax--block.syntax--javadoc.syntax--java {
+  .syntax--variable.syntax--parameter.syntax--java {
+    color: @mono-5;
+  }
 }
