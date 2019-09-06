@@ -1,5 +1,5 @@
 # nv-dark-syntax
-A dark, minimalist syntax theme, that is consistent across multiple languages. The main colors are blue and a muted green. Punctuation is muted and the contrast is high.
+A dark, minimalist syntax theme for the Atom Editor, that is consistent across multiple languages. The main colors are blue and a muted green. Punctuation is muted and the contrast is high.
 
 ![nv-dark-syntax](https://github.com/NicklasVraa/nv-dark-syntax/blob/master/example.png?raw=true)
 Matching UI theme: **nv-dark-ui**  
@@ -17,4 +17,4 @@ Visual packages: file-icons, minimap
 - Bash
 
 ---
-**Author**: Nicklas Vraa. Built from One Dark.
+**Author**: Nicklas Vraa. Fork of One Dark.
