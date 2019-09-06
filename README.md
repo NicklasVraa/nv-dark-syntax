@@ -8,7 +8,7 @@ Visual packages: file-icons, minimap
 ## Build Log
 **Finished**, meaning i've gone through the language and made sure that its colors are consistent with the overall color scheme, i.e. functions, types etc. always have the same color, regardless of the language.
 
-- Java
+- Java, Scala
 - HTML, Markdown, tex
 - CSS, less, sass
 - Javascript, coffee, json
@@ -17,4 +17,4 @@ Visual packages: file-icons, minimap
 - Bash
 
 ---
-**Author**: Nicklas Vraa. Fork of One Dark.
+**Author**: Nicklas Vraa. Fork of one-dark-syntax.
