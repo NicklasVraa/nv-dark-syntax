@@ -18,3 +18,6 @@ Visual packages: file-icons, minimap
 
 ---
 **Author**: Nicklas Vraa. Fork of one-dark-syntax.
+
+---
+**LEGAL NOTICE**: This repository, including any and all of its forks and derivatives, may NOT be used in the development or training of any machine learning model of any kind, without the explicit permission of the owner of the original repository.
